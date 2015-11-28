@@ -33,6 +33,16 @@ public class Helper {
 		}
 	}
 	
+	public void printArray(char[] arr) {
+		System.out.print("[");
+		for (int x = 0; x < arr.length; x++) {
+			if (x != arr.length - 1)
+				System.out.print(arr[x] + ", ");
+			else
+				System.out.println(arr[x] + "]");
+		}
+	}
+	
 	public void print(String string) {
 		System.out.println(string);
 	}

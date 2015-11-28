@@ -3,6 +3,7 @@ package com.algostudy;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class HashSetDemo {
 	
@@ -66,8 +67,8 @@ public class HashSetDemo {
 			a.setName(a.getName()+"xxxxx");
 			if(a.getId() == 2) {
 				i.remove();
-				Thread.sleep(5000);
-				set.add(a2);
+			//	Thread.sleep(5000);
+				
 			}
 		}
 		
@@ -75,6 +76,13 @@ public class HashSetDemo {
 			System.out.println(a.getId()+"\t"+a.getName());
 		}
 		
+		Set<String> all = new TreeSet<String>();
+		all.add("B");
+		all.add("B");
+		all.add("X");
+		all.add("C");
+		all.add("A");
+		System.out.println(all);
 		
 	}
 	
