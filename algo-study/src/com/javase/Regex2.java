@@ -1,4 +1,4 @@
-package com.algostudy;
+package com.javase;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

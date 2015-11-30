@@ -1,4 +1,4 @@
-package com.algostudy;
+package com.javase;
 
 import java.util.HashSet;
 import java.util.Iterator;
@@ -94,7 +94,7 @@ public class HashSetDemo {
 	 * @param string
 	 * @return
 	 */
-	static int findFirstUniqueChar(String string) {
+	public static int findFirstUniqueChar(String string) {
 		if (string == null || string.length() == 0)
 			return -1;
 		if (string.length() == 1)

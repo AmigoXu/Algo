@@ -1,4 +1,4 @@
-package com.algostudy;
+package com.javase;
 
 import java.util.ArrayList;
 import java.util.List;

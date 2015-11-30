@@ -1,4 +1,4 @@
-package com.algostudy;
+package com.javase;
 
 class MyThread implements Runnable {
 	private int count = 5;

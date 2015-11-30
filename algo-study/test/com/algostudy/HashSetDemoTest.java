@@ -2,8 +2,11 @@ package com.algostudy;
 
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;  
+
 import org.junit.Ignore;
 import org.junit.Test;
+
+import com.javase.HashSetDemo;
 
 public class HashSetDemoTest {
 

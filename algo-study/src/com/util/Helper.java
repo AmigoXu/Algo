@@ -1,5 +1,8 @@
 package com.util;
 
+import java.util.Iterator;
+import java.util.Map;
+
 public class Helper {
 	public void swap(int[] arr, int a, int b) {
 		int temp = arr[a];
@@ -40,6 +43,14 @@ public class Helper {
 				System.out.print(arr[x] + ", ");
 			else
 				System.out.println(arr[x] + "]");
+		}
+	}
+	
+	public <K,V> void print(Map<K, V> map) {
+		Iterator<Map.Entry<K, V>> i = map.entrySet().iterator();
+		while (i.hasNext()) {
+			Map.Entry<K, V> entry = i.next();
+			System.out.println(entry.getKey()+ "\t" + entry.getValue());
 		}
 	}
 	

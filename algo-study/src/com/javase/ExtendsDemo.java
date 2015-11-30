@@ -1,4 +1,4 @@
-package com.algostudy;
+package com.javase;
 
 public class ExtendsDemo {
 
