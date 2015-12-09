@@ -1,6 +1,7 @@
 package com.javase;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 
@@ -8,26 +9,18 @@ public class ArrayListDemo {
 	
 	
 	public static void main(String[] args) {
-		String string = "avvmscksca";
-		char[] chars = string.toCharArray();
-		int[] nums = new int[128];
-		List arrayList = new ArrayList();
+		List<String> list = new ArrayList<String>();
+		list.add("aaa");
+		list.add("bbb");
+		list.add("ccc");
 		
-		for (char c : chars) {
-			int i = (int) c;
-			nums[i] = ++nums[i];
+		for (Iterator i = list.iterator(); i.hasNext();) {
+			String string = (String) i.next();
+			System.out.println(string);
+			i.remove();
 		}
-		
-		for (int j = 0; j < chars.length; j++) {
-			int i = (int) chars[j];
-			if (nums[i] == 1) {
-				System.out.println(chars[j]);
-				return;
-			}
-			
-		}
-		
-		System.out.println("not found");
+		Character c = 'ÊÇ';
+		System.out.println(c.hashCode());
 	}
 	
 	/**
