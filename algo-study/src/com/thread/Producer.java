@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.Thread;
+package com.thread;
 
 
 /**

@@ -1,4 +1,4 @@
-package com.Thread;
+package com.thread;
 
 
 public class Consumer extends Thread {
