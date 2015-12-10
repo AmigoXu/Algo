@@ -3,7 +3,7 @@ package com.javase;
 import java.io.File;
 import java.lang.reflect.Field;
 
-public class oopDemo {
+public class OopDemo {
 
 	public static void main(String[] args) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
 		Animal a = new Cat();

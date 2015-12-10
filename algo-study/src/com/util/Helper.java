@@ -4,19 +4,19 @@ import java.util.Iterator;
 import java.util.Map;
 
 public class Helper {
-	public void swap(int[] arr, int a, int b) {
+	public static void swap(int[] arr, int a, int b) {
 		int temp = arr[a];
 		arr[a] = arr[b];
 		arr[b] = temp;
 	}
 	
-	private void swap(String[] arr, int i, int j) {
+	private static void swap(String[] arr, int i, int j) {
 		String temp = arr[i];
 		arr[i] = arr[j];
 		arr[j] = temp;
 		}
 	
-	public void printArray(int[] arr) {
+	public static void printArray(int[] arr) {
 		System.out.print("[");
 		for (int x = 0; x < arr.length; x++) {
 			if (x != arr.length - 1)
@@ -26,7 +26,7 @@ public class Helper {
 		}
 	}
 	
-	public void printArray(String[] arr) {
+	public static void printArray(String[] arr) {
 		System.out.print("[");
 		for (int i = 0; i < arr.length; i++) {
 			if (i != arr.length - 1)
@@ -36,7 +36,7 @@ public class Helper {
 		}
 	}
 	
-	public void printArray(char[] arr) {
+	public static void printArray(char[] arr) {
 		System.out.print("[");
 		for (int x = 0; x < arr.length; x++) {
 			if (x != arr.length - 1)
@@ -46,7 +46,7 @@ public class Helper {
 		}
 	}
 	
-	public <K,V> void print(Map<K, V> map) {
+	public static <K,V> void print(Map<K, V> map) {
 		Iterator<Map.Entry<K, V>> i = map.entrySet().iterator();
 		while (i.hasNext()) {
 			Map.Entry<K, V> entry = i.next();
@@ -54,7 +54,7 @@ public class Helper {
 		}
 	}
 	
-	public void print(String string) {
+	public static void print(String string) {
 		System.out.println(string);
 	}
 	
