@@ -14,7 +14,13 @@ public class Helper {
 		String temp = arr[i];
 		arr[i] = arr[j];
 		arr[j] = temp;
-		}
+	}
+	
+	public static void swap(Comparable[] arr, int a, int b) {
+		Comparable temp = arr[a];
+		arr[a] = arr[b];
+		arr[b] = temp;
+	}
 	
 	public static void printArray(int[] arr) {
 		System.out.print("[");
@@ -37,6 +43,16 @@ public class Helper {
 	}
 	
 	public static void printArray(char[] arr) {
+		System.out.print("[");
+		for (int x = 0; x < arr.length; x++) {
+			if (x != arr.length - 1)
+				System.out.print(arr[x] + ", ");
+			else
+				System.out.println(arr[x] + "]");
+		}
+	}
+	
+	public static <T> void printArray(T[] arr) {
 		System.out.print("[");
 		for (int x = 0; x < arr.length; x++) {
 			if (x != arr.length - 1)
