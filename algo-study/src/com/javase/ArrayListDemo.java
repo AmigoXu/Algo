@@ -14,19 +14,19 @@ public class ArrayListDemo {
 		list.add("bbb");
 		list.add("ccc");
 		
-		for (Iterator i = list.iterator(); i.hasNext();) {
+		for (Iterator<String> i = list.iterator(); i.hasNext();) {
 			String string = (String) i.next();
 			System.out.println(string);
 			i.remove();
 		}
-		Character c = 'ÊÇ';
+		Character c = 'o';
 		System.out.println(c.hashCode());
 	}
 	
 	/**
-	 * ÕÒ×Ö·û´®µÚÒ»¸ö²»ÖØ¸´, ·µ»Øindex,ÕÒ²»µ½-1
-	 * ascii 0-127, ½¨Ò»¸ö128 int[], µÚÒ»´Î±éÀústring,Ã¿¸öasciiÂëÖµ¶ÔÓ¦´æ³öÏÖ´ÎÊý
-	 * µÚ¶þ´Î±éÀústring, µÚÒ»´Înums[i] == 1 returnÏÂ±ê
+	 * ï¿½ï¿½ï¿½Ö·ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ø¸ï¿½, ï¿½ï¿½ï¿½ï¿½index,ï¿½Ò²ï¿½ï¿½ï¿½-1
+	 * ascii 0-127, ï¿½ï¿½Ò»ï¿½ï¿½128 int[], ï¿½ï¿½Ò»ï¿½Î±ï¿½ï¿½ï¿½string,Ã¿ï¿½ï¿½asciiï¿½ï¿½Öµï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½
+	 * ï¿½Ú¶ï¿½ï¿½Î±ï¿½ï¿½ï¿½string, ï¿½ï¿½Ò»ï¿½ï¿½nums[i] == 1 returnï¿½Â±ï¿½
 	 * @param string
 	 * @return
 	 */
